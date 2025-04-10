@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Footer from "./shared/Footer";
-import Navbar from "./shared/Navbar";
+import Footer from "./elements/Footer";
+import Navbar from "./elements/Navbar";
 
 const Layout = ({ title, children }) => {
   useEffect(() => {
@@ -13,7 +13,7 @@ const Layout = ({ title, children }) => {
       <main className="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
         {children}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
